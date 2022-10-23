@@ -1,0 +1,15 @@
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\bin\Debug\net6.0\Core.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\Entities\obj\Debug\net6.0\ref\Entities.dll

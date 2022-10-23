@@ -1,0 +1,17 @@
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\Core.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\Entities.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\Core.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\bin\Debug\net6.0\Entities.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\msı-nb\source\repos\YazGerAnalizi\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
