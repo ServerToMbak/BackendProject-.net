@@ -3,6 +3,7 @@ using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
+using Core.Utilities.Helpers.FileHelper;
 using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
@@ -30,6 +31,10 @@ namespace Business.DependencyResolver.Autofac
 
             builder.RegisterType<QuestionManager>().As<IQuestionService>();
             builder.RegisterType<EfQuestionDal>().As<IQuestionDal>();
+
+            builder.RegisterType<QuestionImageManager>().As<IQuestionImageSevice>().SingleInstance();
+            builder.RegisterType<EfQuestıonImageDal>().As<IQuestionImageDal>();
+            builder.RegisterType<FileHelperManager>().As<IFileHelper>();
 
 
 

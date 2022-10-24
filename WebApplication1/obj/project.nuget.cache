@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kBGX9ifCGLyuUp6J7p3hDH9pV7qVjNzxz4J+9naju69+hP9NrGTEAzg1R91JpRtNPQKbgGWVag4iVZMmuwxDOg==",
+  "dgSpecHash": "GxuZ8AjuFKmprrT2oYr5Tft5HDMmsZSfl88GZ7bkNDotuKBSCLl4JNijUAoHqF+sYRCvkZ4VTFVJUv/mYx6/NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msı-nb\\source\\repos\\YazGerAnalizi\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msı-nb\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\msı-nb\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

@@ -17,5 +17,7 @@ namespace Business.Constants
         public static string QuestionAdded = "SoruEklendi";
         public static string QuestionDeletted = "Soru Silindi";
         public static string QuestionUpdated = "Soru Güncellendi";
+
+        public static string ImagesPath = "wwwroot\\Uploads\\Images\\";
     }
 }

@@ -43,7 +43,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.Id==id));
         }
-
+        [ValidationAspect(typeof(CategoryValidation))]
         public IResult Update(Category category)
         {
             _categoryDal.Update(category);

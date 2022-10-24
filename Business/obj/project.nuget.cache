@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PBhxhX34BZi0O+etUCjaf5tKVaony0GQdS0DkPvT/em8NVMRAKyqlU00cje1werkWX+l1mWt/nExln5G0ad9Sw==",
+  "dgSpecHash": "Gl7+I6xa/LooCINmYTNpXIjldIplrZprbBYiEunEl3+CLUakkdIadOfPBdHUUYfbOBTuSzzpbMWGXnE6pZ43jA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msı-nb\\source\\repos\\YazGerAnalizi\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msı-nb\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\msı-nb\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
