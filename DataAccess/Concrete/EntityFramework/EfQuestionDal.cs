@@ -28,6 +28,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  Title=q.Title,
                                  QuestionDescription = q.Description,
                                  CategoryName = c.CategoryName,
+                                 QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.Id).ToList()
                              };
                 return result.FirstOrDefault();
             }

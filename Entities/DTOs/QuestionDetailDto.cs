@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Entities.DTOs
         public string QuestionDescription { get; set; }
         public string CategoryName { get; set; }
         public string Title { get; set; }
+        public List<QuestionImage> QuestionImage { get; set; }
 
     }
 }

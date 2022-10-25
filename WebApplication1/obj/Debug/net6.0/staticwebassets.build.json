@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IiW+2R0gSNKwFT3UXKg5xIX5GGdOFyFgr5alSbowQJg=",
+  "Hash": "sMy+RYWP5oddt9PFrQVF0qs/CU6ZNlNyDNqU5YwZYPg=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\05c080f5-991c-4711-b85e-2cab852f7ee9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\12e29abf-d83e-4992-b524-fd771f567ef2.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/12e29abf-d83e-4992-b524-fd771f567ef2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\12e29abf-d83e-4992-b524-fd771f567ef2.jpg"
     },
     {
       "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\2e6bce5b-4c6c-40cf-bbc0-457748c93595.jpeg",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\5c2606dc-c33a-48ba-884d-ce6823d5de30.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\6d932b60-d6b6-49df-833a-b3d952b7401d.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/6d932b60-d6b6-49df-833a-b3d952b7401d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\6d932b60-d6b6-49df-833a-b3d952b7401d.jpg"
     },
     {
       "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\82c06331-ab5d-48e3-9ba9-1908e02bf5f8.jpeg",
