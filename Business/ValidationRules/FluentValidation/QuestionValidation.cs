@@ -14,6 +14,7 @@ namespace Business.ValidationRules.FluentValidation
         {
            RuleFor(q=>q.Description).MinimumLength(2).MaximumLength(200);
             RuleFor(q => q.Description).NotEmpty();
+           
         }
     }
 }

@@ -59,6 +59,19 @@ namespace WebApplication1.Controllers
             }
             return Ok(result);
         }
+
+        [HttpGet("getQuestionDetail")]
+        public IActionResult GetQuestionDeails(int Id)
+        {
+            var result = _questionService.GetQuestionDetails();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return Ok(result);
+        }
+
+
         [HttpPost("Update")]
         public IActionResult Update(Question question)
         {

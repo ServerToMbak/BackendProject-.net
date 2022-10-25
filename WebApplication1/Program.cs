@@ -14,7 +14,7 @@ internal class Program
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+        builder.Services.AddCors();
         // Add services to the container.
 
         builder.Services.AddControllers();
@@ -58,7 +58,7 @@ internal class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
+        app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
