@@ -25,6 +25,7 @@ namespace DataAccess.Concrete.EntityFramework
                              select new QuestionDetailDto
                              { 
                                  QuestionId = q.Id,
+                                 Title=q.Title,
                                  QuestionDescription = q.Description,
                                  CategoryName = c.CategoryName,
                              };
