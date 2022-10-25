@@ -61,9 +61,9 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("getQuestionDetail")]
-        public IActionResult GetQuestionDeails(int Id)
+        public IActionResult GetQuestionDeails(int QuestionId)
         {
-            var result = _questionService.GetQuestionDetails();
+            var result = _questionService.GetQuestionDetails(QuestionId);
             if (result.Success)
             {
                 return Ok(result);

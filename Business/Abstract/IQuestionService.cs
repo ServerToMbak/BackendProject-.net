@@ -14,7 +14,7 @@ namespace Business.Abstract
         public IResult Add(Question question);
         public IResult Delete(Question question);
         public IResult Update(Question question);
-        IDataResult<List<QuestionDetailDto>> GetQuestionDetails();
+        IDataResult<QuestionDetailDto> GetQuestionDetails(int questionId);
         public IDataResult<Question> GetByQuestionId(int id);
         public IDataResult<List<Question>> GetAll();
     }
