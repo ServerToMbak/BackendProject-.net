@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CommentController : ControllerBase
+    public class CommentController : Controller
     {
         ICommentServcie _commentServcie;
         public CommentController(ICommentServcie commentServcie)

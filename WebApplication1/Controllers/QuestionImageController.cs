@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuestionImageController : ControllerBase
+    public class QuestionImageController : Controller
     {
         IQuestionImageSevice _questionImageSevice;
         public QuestionImageController(IQuestionImageSevice questionImageSevice)

@@ -7,7 +7,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuestionController : ControllerBase
+    public class QuestionController : Controller
     {
         IQuestionService _questionService;
         public QuestionController(IQuestionService questionService)

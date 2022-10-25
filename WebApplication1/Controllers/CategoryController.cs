@@ -7,7 +7,7 @@ namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoryController : Controller
     {
         ICategoryService _categoryService;
         public CategoryController(ICategoryService categoryService)

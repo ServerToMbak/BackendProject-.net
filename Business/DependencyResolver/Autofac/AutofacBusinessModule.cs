@@ -5,6 +5,7 @@ using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Helpers.FileHelper;
 using Core.Utilities.Interceptors;
+using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
@@ -34,9 +35,14 @@ namespace Business.DependencyResolver.Autofac
 
             builder.RegisterType<QuestionImageManager>().As<IQuestionImageSevice>().SingleInstance();
             builder.RegisterType<EfQuestıonImageDal>().As<IQuestionImageDal>();
+
             builder.RegisterType<FileHelperManager>().As<IFileHelper>();
 
+            builder.RegisterType<UserManager>().As<IUserService>();
+            builder.RegisterType<EfUserDal>().As<IUserDal>();
 
+            builder.RegisterType<AuthManager>().As<IAuthService>();
+            builder.RegisterType<JwtHelper>().As<ITokenHelper>();
 
 
 
