@@ -37,6 +37,16 @@ namespace WebApplication1.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("GetByCategoryId")]
+        public IActionResult GetByCategoryId(int id)
+        {
+            var result = _questionService.GetByCategoryId(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
 
         [HttpPost("Delete")]
         public IActionResult Delete(Question question)
