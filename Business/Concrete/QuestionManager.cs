@@ -48,7 +48,7 @@ namespace Business.Concrete
 
         public IDataResult<Question> GetByQuestionId(int id)
         {
-            return new SuccessDataResult<Question>(_questionDal.Get(c=>c.Id==id));
+            return new SuccessDataResult<Question>(_questionDal.Get(c=>c.CategoryId ==id));
         }
 
         public IDataResult<QuestionDetailDto> GetQuestionDetails(int questionId)

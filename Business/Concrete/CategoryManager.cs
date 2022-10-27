@@ -6,6 +6,7 @@ using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -22,7 +23,7 @@ namespace Business.Concrete
         {
             _categoryDal = CategporyDal;
         }
-       // [SecuredOperation("admin")]
+       //[SecuredOperation("admin")]
         public IResult Add(Category category)
         {
             _categoryDal.Add(category);
@@ -43,8 +44,14 @@ namespace Business.Concrete
 
         public IDataResult<List<Category>> GetById(int id)
         {
-            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.Id==id));
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.CategoryId ==id));
         }
+
+        public IDataResult<List<GetByCategoryAllitems>> GetCategoryDetail(int id)
+        {
+            return new SuccessDataResult<List<GetByCategoryAllitems>> (_categoryDal.getByCategoryDetails(id));
+        }
+
         [ValidationAspect(typeof(CategoryValidation))]
         public IResult Update(Category category)
         {

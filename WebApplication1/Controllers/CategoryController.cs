@@ -51,15 +51,31 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("getbyıd")]
-        public IActionResult GetById(int carId)
+        public IActionResult GetById(int categoryId)
         {
-            var result = _categoryService.GetById(carId);
+            var result = _categoryService.GetById(categoryId);
             if (result.Success)
             {
                 return Ok(result);
             }
             return Ok(result);
         }
+
+        [HttpGet("GetCategoryDetail")]
+        public IActionResult GetCategoryDetail(int categoryId)
+        {
+            var result = _categoryService.GetCategoryDetail(categoryId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return Ok(result);
+        }
+
+
+
+
+
         [HttpPost]
         public IActionResult Update(Category category)
         {

@@ -41,7 +41,7 @@ namespace Business.Concrete
 
         public IDataResult<Comment> GetByCommentId(int id)
         {
-            return new SuccessDataResult<Comment>(_commentDal.Get(c=>c.Id==id));
+            return new SuccessDataResult<Comment>(_commentDal.Get(c=>c.CommentId==id));
         }
         [ValidationAspect(typeof(CommentValidation))]
         public IResult Update(Comment comment)

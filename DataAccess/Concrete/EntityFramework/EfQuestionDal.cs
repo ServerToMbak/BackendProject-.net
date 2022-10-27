@@ -20,15 +20,15 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 var result = from q in context.Questions
                              join c in context.Categories
-                             on q.CategoryId equals c.Id
-                             where q.Id==id
+                             on q.CategoryId equals c.CategoryId
+                             where q.QuestionId==id
                              select new QuestionDetailDto
                              { 
-                                 QuestionId = q.Id,
+                                 QuestionId = q.QuestionId,
                                  Title=q.Title,
                                  QuestionDescription = q.Description,
                                  CategoryName = c.CategoryName,
-                                 QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.Id).ToList()
+                                 QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.QuestionId).ToList()
                              };
                 return result.FirstOrDefault();
             }
