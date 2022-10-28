@@ -11,8 +11,8 @@ namespace Entities.DTOs
     {
         public int QuestionId { get; set; }
         public string QuestionDescription { get; set; }
-        public string CategoryName { get; set; }
         public string Title { get; set; }
+        public List<Comment> Comment { get; set; }
         public List<QuestionImage> QuestionImage { get; set; }
 
     }

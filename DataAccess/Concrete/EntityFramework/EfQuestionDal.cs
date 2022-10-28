@@ -19,15 +19,13 @@ namespace DataAccess.Concrete.EntityFramework
             using (var context=new YazSınamaContext())
             {
                 var result = from q in context.Questions
-                             join c in context.Categories
-                             on q.CategoryId equals c.CategoryId
-                             where q.QuestionId==id
+                             where q.QuestionId == id
                              select new QuestionDetailDto
-                             { 
+                             {
                                  QuestionId = q.QuestionId,
-                                 Title=q.Title,
+                                 Title = q.Title,
                                  QuestionDescription = q.Description,
-                                 CategoryName = c.CategoryName,
+                                 Comment = context.Comments.Where(cm => cm.CommentId == q.CommentId).ToList(),
                                  QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.QuestionId).ToList()
                              };
                 return result.FirstOrDefault();

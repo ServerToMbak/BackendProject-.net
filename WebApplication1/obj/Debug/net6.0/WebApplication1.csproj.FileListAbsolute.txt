@@ -145,3 +145,5 @@ C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\obj\Debug\net6
 C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
 C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\bin\Debug\net6.0\log4net.dll
+C:\Users\msı-nb\source\repos\BackendProject-.net\WebApplication1\bin\Debug\net6.0\Newtonsoft.Json.dll

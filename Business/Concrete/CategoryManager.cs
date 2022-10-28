@@ -44,6 +44,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Category>> GetById(int id)
         {
+
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.CategoryId ==id));
         }
 
