@@ -7369,11 +7369,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\msı-nb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\Core\\obj\\",
+      "outputPath": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

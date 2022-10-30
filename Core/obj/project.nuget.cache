@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SMZEjYwmHp+iRZhG5Ewr11txG8jEv1IvhiI46HAJhHfVMFaPiXduDoZN5fJo/9pRN/tnV0AR7MR8GJnqad+8LQ==",
+  "dgSpecHash": "1Z8qOt5N2FUEa+RdxoomoVJeueCHFl8avVSaorl7iOLnUlYdDZRbacWvInck/gEsK7wqW2XaX47NazcRVAOI+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msı-nb\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\msı-nb\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
