@@ -15,6 +15,29 @@ namespace WebApplication1.Controllers
         {
                 _questionImageSevice = questionImageSevice;
         }
+        [HttpGet("GetById")]
+        public IActionResult GetById(int id)
+        {
+            var result = _questionImageSevice.GetByImageId(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+
+        }
+        [HttpGet("GetAll")]
+        public IActionResult GetAll()
+        {
+            var result = _questionImageSevice.GetAll();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+
+        }
+
         [HttpPost("add")]
         public IActionResult Add([FromForm] IFormFile file, [FromForm] QuestionImage questionImage)
         {

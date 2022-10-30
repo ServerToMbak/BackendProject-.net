@@ -9,8 +9,10 @@ namespace Entities.Concrete
 {
     public class Comment : IEntity
     {
+        public int UserId { get; set; }
         public int CommentId { get; set; }
         public string TheComment { get; set; }
         public int QuestionId { get; set; }
+        public DateTime Date { get; set; }
     }
 }

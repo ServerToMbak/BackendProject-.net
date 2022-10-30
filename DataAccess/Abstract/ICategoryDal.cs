@@ -11,6 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface ICategoryDal:IEntityRepository<Category>
     {
-        List<GetByCategoryAllitems> getByCategoryDetails(int id);
+       List<GetByCategoryAllitems> getByCategoryDetails(int id);
     }
 }

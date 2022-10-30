@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,9 @@ namespace Entities.DTOs
         public string Title { get; set; }
         public List<Comment> Comment { get; set; }
         public List<QuestionImage> QuestionImage { get; set; }
+        public int userId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
     }
 }

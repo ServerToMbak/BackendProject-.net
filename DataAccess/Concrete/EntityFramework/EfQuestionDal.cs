@@ -1,4 +1,5 @@
 ﻿using Core.DataAccess.EntityRepository;
+using Core.Entities.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -19,14 +20,21 @@ namespace DataAccess.Concrete.EntityFramework
             using (var context=new YazSınamaContext())
             {
                 var result = from q in context.Questions
+                             join user in context.Users
+                             on q.UserId equals user.Id
                              where q.QuestionId == id
                              select new QuestionDetailDto
                              {
+                                 userId = user.Id,
+                                 FirstName=user.FirstName,
+                                 LastName=user.LastName,
                                  QuestionId = q.QuestionId,
                                  Title = q.Title,
                                  QuestionDescription = q.Description,
                                  Comment = context.Comments.Where(cm => cm.QuestionId == q.QuestionId).ToList(),
                                  QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.QuestionId).ToList()
+                                
+                                 
                              };
                 return result.FirstOrDefault();
             }

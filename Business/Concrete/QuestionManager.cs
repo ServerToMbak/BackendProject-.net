@@ -25,6 +25,7 @@ namespace Business.Concrete
         [ValidationAspect(typeof(QuestionValidation))]
         public IResult Add(Question question)
         {
+            question.Date = DateTime.Now;
             _questionDal.Add(question);
             return new SuccessResult(Messages.QuestionAdded);
         }

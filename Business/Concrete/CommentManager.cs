@@ -24,6 +24,7 @@ namespace Business.Concrete
         [ValidationAspect(typeof(CommentValidation))]
         public IResult Add(Comment comment)
         {
+            comment.Date = DateTime.Now;
             _commentDal.Add(comment);
             return new SuccessResult(Messages.CommentAdded);
         }
