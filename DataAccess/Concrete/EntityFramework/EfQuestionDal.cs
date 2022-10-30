@@ -25,7 +25,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  QuestionId = q.QuestionId,
                                  Title = q.Title,
                                  QuestionDescription = q.Description,
-                                 Comment = context.Comments.Where(cm => cm.CommentId == q.CommentId).ToList(),
+                                 Comment = context.Comments.Where(cm => cm.QuestionId == q.QuestionId).ToList(),
                                  QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.QuestionId).ToList()
                              };
                 return result.FirstOrDefault();

@@ -24,7 +24,7 @@ namespace DataAccess.Concrete.EntityFramework
                              join q in context.Questions
                              on c.CategoryId equals q.CategoryId
                              join cm in context.Comments
-                             on q.CommentId equals cm.CommentId
+                             on q.QuestionId equals cm.QuestionId
                              where c.CategoryId==id
                              select new GetByCategoryAllitems
                              {

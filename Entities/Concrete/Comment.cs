@@ -11,5 +11,6 @@ namespace Entities.Concrete
     {
         public int CommentId { get; set; }
         public string TheComment { get; set; }
+        public int QuestionId { get; set; }
     }
 }
