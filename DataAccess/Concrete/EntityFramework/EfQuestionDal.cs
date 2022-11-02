@@ -26,15 +26,13 @@ namespace DataAccess.Concrete.EntityFramework
                              select new QuestionDetailDto
                              {
                                  userId = user.Id,
-                                 FirstName=user.FirstName,
-                                 LastName=user.LastName,
+                                 FirstName = user.FirstName,
+                                 LastName = user.LastName,
+                                 Date = q.Date,
                                  QuestionId = q.QuestionId,
                                  Title = q.Title,
                                  QuestionDescription = q.Description,
-                                 Comment = context.Comments.Where(cm => cm.QuestionId == q.QuestionId).ToList(),
-                                 QuestionImage = context.QuestionImage.Where(qi=>qi.QuestıonId==q.QuestionId).ToList()
-                                
-                                 
+                                 QuestionImage = context.QuestionImage.Where(qi => qi.QuestıonId == q.QuestionId).ToList()
                              };
                 return result.FirstOrDefault();
             }

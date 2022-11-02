@@ -59,6 +59,16 @@ namespace WebApplication1.Controllers
             }
             return Ok(result);
         }
+        [HttpGet("getCommentDetail")]
+        public IActionResult getCommentDetail(int Questionid)
+        {
+            var result = _commentServcie.GetCommentDetail(Questionid);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return Ok(result);
+        }
         [HttpPost("Update")]
         public IActionResult Update(Comment comemnt)
         {

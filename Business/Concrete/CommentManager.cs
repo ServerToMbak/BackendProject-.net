@@ -5,6 +5,7 @@ using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -44,6 +45,12 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<Comment>(_commentDal.Get(c=>c.CommentId==id));
         }
+
+        public IDataResult<GetCommentDetailDto> GetCommentDetail(int id)
+        {
+            return new SuccessDataResult<GetCommentDetailDto>(_commentDal.GetCommentDetail(id));
+        }
+
         [ValidationAspect(typeof(CommentValidation))]
         public IResult Update(Comment comment)
         {

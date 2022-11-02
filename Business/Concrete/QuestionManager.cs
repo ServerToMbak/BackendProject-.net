@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,9 +19,11 @@ namespace Business.Concrete
     public class QuestionManager : IQuestionService
     {
         IQuestionDal _questionDal;
-        public QuestionManager(IQuestionDal questionDal)
+        ICommentServcie _commentServcie;
+        public QuestionManager(IQuestionDal questionDal,ICommentServcie commentServcie)
         {
             _questionDal = questionDal;
+            _commentServcie=commentServcie;
     }
         [ValidationAspect(typeof(QuestionValidation))]
         public IResult Add(Question question)
@@ -54,6 +57,11 @@ namespace Business.Concrete
 
         public IDataResult<QuestionDetailDto> GetQuestionDetails(int questionId)
         {
+            var result = _commentServcie.GetCommentDetail(questionId);
+            if (result == null)
+            {
+               
+            }
            return new SuccessDataResult<QuestionDetailDto>(_questionDal.GetQuestionDetails(questionId));
         }
 
