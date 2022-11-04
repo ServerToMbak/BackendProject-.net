@@ -1,10 +1,12 @@
 ﻿using Core.DataAccess.EntityRepository;
+using Core.Entities;
 using Core.Entities.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -22,9 +24,11 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from q in context.Questions
                              join user in context.Users
                              on q.UserId equals user.Id
-                             where q.QuestionId == id
+                             where q.QuestionId == id 
+                           
                              select new QuestionDetailDto
                              {
+                               
                                  userId = user.Id,
                                  FirstName = user.FirstName,
                                  LastName = user.LastName,
@@ -32,7 +36,12 @@ namespace DataAccess.Concrete.EntityFramework
                                  QuestionId = q.QuestionId,
                                  Title = q.Title,
                                  QuestionDescription = q.Description,
-                                 QuestionImage = context.QuestionImage.Where(qi => qi.QuestıonId == q.QuestionId).ToList()
+                                 QuestionImage = context.QuestionImage.Where(qi => qi.QuestıonId == q.QuestionId).ToList(),
+                                 Comment =context.Comments.Where(cm => cm.QuestionId == id).ToList(),
+                               
+                                 
+                                      
+                                 
                              };
                 return result.FirstOrDefault();
             }

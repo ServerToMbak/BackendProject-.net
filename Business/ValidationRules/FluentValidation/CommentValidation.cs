@@ -12,7 +12,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public CommentValidation()
         {
-            RuleFor(c => c.TheComment).MaximumLength(200);
+            RuleFor(c => c.TheComment).MaximumLength(400);
             RuleFor(c=>c.TheComment).MinimumLength(2);
             RuleFor(c=>c.TheComment).NotEmpty();
         }
