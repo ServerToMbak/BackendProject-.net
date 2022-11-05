@@ -18,5 +18,6 @@ namespace Business.Abstract
         public IDataResult<Question> GetByQuestionId(int id);
         public IDataResult<List<Question>> GetByCategoryId(int id);
         public IDataResult<List<Question>> GetAll();
+        public IDataResult<int> CountNumberOfQuestionInCategory(int categoryId);
     }
 }

@@ -24,7 +24,13 @@ namespace Business.Concrete
         {
             _questionDal = questionDal;
             _commentServcie=commentServcie;
-    }
+        }
+
+        public IDataResult<int> CountNumberOfQuestionInCategory(int categoryId) 
+        {
+            return new SuccessDataResult<int>(_questionDal.GetAll(q=>q.CategoryId== categoryId).Count());
+        }
+
         [ValidationAspect(typeof(QuestionValidation))]
         public IResult Add(Question question)
         {
@@ -41,7 +47,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Question>> GetAll()
         {
-            return new SuccessDataResult<List<Question>>(_questionDal.GetAll(), _questionDal.GetAll().Count().ToString());
+            return new SuccessDataResult<List<Question>>(_questionDal.GetAll());
 
         }
 

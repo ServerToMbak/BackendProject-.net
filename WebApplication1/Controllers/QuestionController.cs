@@ -47,6 +47,16 @@ namespace WebApplication1.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("count")]
+        public IActionResult Count(int categoryId)
+        {
+            var result = _questionService.CountNumberOfQuestionInCategory(categoryId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
 
         [HttpPost("Delete")]
         public IActionResult Delete(Question question)
