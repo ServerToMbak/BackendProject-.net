@@ -41,7 +41,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Question>> GetAll()
         {
-            return new SuccessDataResult<List<Question>>(_questionDal.GetAll());
+            return new SuccessDataResult<List<Question>>(_questionDal.GetAll(), _questionDal.GetAll().Count().ToString());
 
         }
 
