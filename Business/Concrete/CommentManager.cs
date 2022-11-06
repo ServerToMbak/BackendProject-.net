@@ -21,6 +21,7 @@ namespace Business.Concrete
         public CommentManager(ICommentDal commentDal)
         {
             _commentDal = commentDal;   
+            
         }
         [ValidationAspect(typeof(CommentValidation))]
         public IResult Add(Comment comment)
@@ -44,6 +45,16 @@ namespace Business.Concrete
         public IDataResult<Comment> GetByCommentId(int id)
         {
             return new SuccessDataResult<Comment>(_commentDal.Get(c=>c.CommentId==id));
+        }
+
+        public IResult DeleteByQuestionId(int questionId)
+        {
+            var result = _commentDal.GetAll(q => q.QuestionId == questionId);
+            foreach (var item in result)
+            {
+                _commentDal.Delete(item);
+            }
+            return new SuccessResult();
         }
 
         public IDataResult<GetCommentDetailDto> GetCommentDetail(int id)

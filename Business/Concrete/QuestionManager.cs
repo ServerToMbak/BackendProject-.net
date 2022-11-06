@@ -42,6 +42,7 @@ namespace Business.Concrete
         public IResult Delete(Question question)
         {
             _questionDal.Delete(question);
+            _commentServcie.DeleteByQuestionId(question.QuestionId);
             return new SuccessResult(Messages.QuestionDeletted);
         }
 
@@ -58,7 +59,7 @@ namespace Business.Concrete
 
         public IDataResult<Question> GetByQuestionId(int id)
         {
-            return new SuccessDataResult<Question>(_questionDal.Get(c=>c.CategoryId ==id));
+            return new SuccessDataResult<Question>(_questionDal.Get(c=>c.QuestionId ==id));
         }
 
         public IDataResult<QuestionDetailDto> GetQuestionDetails(int questionId)
