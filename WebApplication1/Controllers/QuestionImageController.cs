@@ -13,7 +13,7 @@ namespace WebApplication1.Controllers
         IQuestionImageSevice _questionImageSevice;
         public QuestionImageController(IQuestionImageSevice questionImageSevice)
         {
-                _questionImageSevice = questionImageSevice;
+            _questionImageSevice = questionImageSevice;
         }
         [HttpGet("GetById")]
         public IActionResult GetById(int id)
@@ -70,7 +70,7 @@ namespace WebApplication1.Controllers
                 return Ok();
             }
             return BadRequest();
-    
+
         }
     }
 }

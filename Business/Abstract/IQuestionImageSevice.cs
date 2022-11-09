@@ -18,5 +18,6 @@ namespace Business.Abstract
         IDataResult<List<QuestionImage>> GetAll();
         IDataResult<List<QuestionImage>> GetByQuestionId(int QuestinId);
         IDataResult<QuestionImage> GetByImageId(int QuestinId);
+        IResult DeleteAllImagesByQuestionId(int questionId); 
     }
 }

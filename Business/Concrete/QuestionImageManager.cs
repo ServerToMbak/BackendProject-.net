@@ -58,7 +58,15 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<QuestionImage>>(_questionImage.GetAll());
         }
-       
 
+        public IResult DeleteAllImagesByQuestionId(int questionId)
+        {
+            var result = _questionImage.GetAll(q=>q.QuestıonId== questionId);
+            foreach(var item in result)
+            {
+                _questionImage.Delete(item);
+            }
+            return new SuccessResult("var olans oru fotoğraffları silindi!");
+        }
     }
 }

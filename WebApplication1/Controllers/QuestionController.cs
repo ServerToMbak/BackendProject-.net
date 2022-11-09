@@ -37,7 +37,7 @@ namespace WebApplication1.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("GetByCategoryId")]
+        [HttpGet("GetByCategoryId")]    
         public IActionResult GetByCategoryId(int id)
         {
             var result = _questionService.GetByCategoryId(id);

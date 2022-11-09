@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -20,10 +21,12 @@ namespace Business.Concrete
     {
         IQuestionDal _questionDal;
         ICommentServcie _commentServcie;
-        public QuestionManager(IQuestionDal questionDal,ICommentServcie commentServcie)
+        IQuestionImageSevice _questionImageService;
+        public QuestionManager(IQuestionDal questionDal,ICommentServcie commentServcie, IQuestionImageSevice questionImageService)
         {
             _questionDal = questionDal;
-            _commentServcie=commentServcie;
+            _commentServcie = commentServcie;
+            _questionImageService = questionImageService;   
         }
 
         public IDataResult<int> CountNumberOfQuestionInCategory(int categoryId) 
@@ -42,10 +45,11 @@ namespace Business.Concrete
         public IResult Delete(Question question)
         {
             _questionDal.Delete(question);
-            _commentServcie.DeleteByQuestionId(question.QuestionId);
+            _commentServcie.DeleteAllCommentByQuestionId(question.QuestionId);
+            _questionImageService.DeleteAllImagesByQuestionId(question.QuestionId);
             return new SuccessResult(Messages.QuestionDeletted);
         }
-
+        [CacheAspect(10)]
         public IDataResult<List<Question>> GetAll()
         {
             return new SuccessDataResult<List<Question>>(_questionDal.GetAll());

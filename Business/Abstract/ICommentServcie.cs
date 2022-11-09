@@ -17,6 +17,6 @@ namespace Business.Abstract
         public IDataResult<Comment> GetByCommentId(int id);
         public IDataResult<List<Comment>> GetAll();
         public IDataResult<GetCommentDetailDto> GetCommentDetail(int id);
-        public IResult DeleteByQuestionId(int questionId); 
+        public IResult DeleteAllCommentByQuestionId(int questionId); 
     }
 }

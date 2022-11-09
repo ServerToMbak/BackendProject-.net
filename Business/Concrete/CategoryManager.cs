@@ -2,6 +2,7 @@
 using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -23,37 +24,43 @@ namespace Business.Concrete
         {
             _categoryDal = CategporyDal;
         }
-       //[SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
+        [CacheRemoveAspect("ICategoryService.GetAll")]
+        [CacheRemoveAspect("ICategoryService.GetById")]
         public IResult Add(Category category)
         {
             _categoryDal.Add(category);
             return new SuccessResult(Messages.CategoryAdded);
         }
         [ValidationAspect(typeof(CategoryValidation))]
+        [CacheRemoveAspect("ICategoryService.GetAll")]
+        [CacheRemoveAspect("ICategoryService.GetById")]
         public IResult Delete(Category category)
         {
             _categoryDal.Delete(category);
             return new SuccessResult();
             
         }
-
+        [CacheAspect(60)]
         public IDataResult<List<Category>> GetAll()
         {
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
         }
-
+        [CacheAspect(10)]
         public IDataResult<List<Category>> GetById(int id)
         {
 
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.CategoryId ==id));
         }
-
+        [CacheAspect(10)]
         public IDataResult<List<GetByCategoryAllitems>> GetCategoryDetail(int id)
         {
             return new SuccessDataResult<List<GetByCategoryAllitems>> (_categoryDal.getByCategoryDetails(id));
         }
 
         [ValidationAspect(typeof(CategoryValidation))]
+        [CacheRemoveAspect("ICategoryService.GetAll")]
+        [CacheRemoveAspect("ICategoryService.GetById")]
         public IResult Update(Category category)
         {
             _categoryDal.Update(category);
