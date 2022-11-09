@@ -35,13 +35,16 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(QuestionValidation))]
+        [CacheRemoveAspect("IQestionService.add")]
+        [CacheRemoveAspect("IQestionService.GetAll")]
         public IResult Add(Question question)
         {
             question.Date = DateTime.Now;
             _questionDal.Add(question);
             return new SuccessResult(Messages.QuestionAdded);
         }
-
+        [CacheRemoveAspect("IQestionService.add")]
+        [CacheRemoveAspect("IQestionService.GetAll")]
         public IResult Delete(Question question)
         {
             _questionDal.Delete(question);
@@ -55,7 +58,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Question>>(_questionDal.GetAll());
 
         }
-
+        [CacheAspect(10)]
         public IDataResult<List<Question>> GetByCategoryId(int id)
         {
             return new SuccessDataResult<List<Question>>(_questionDal.GetAll(q=>q.CategoryId==id));
@@ -75,7 +78,8 @@ namespace Business.Concrete
             }
            return new SuccessDataResult<QuestionDetailDto>(_questionDal.GetQuestionDetails(questionId));
         }
-
+        [CacheRemoveAspect("IQestionService.add")]
+        [CacheRemoveAspect("IQestionService.GetAll")]
         public IResult Update(Question question)
         {
             _questionDal.Update(question);

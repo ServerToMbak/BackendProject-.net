@@ -30,6 +30,6 @@ namespace Business.Constants
         public static string AccessTokenCreated = "Token Oluşturuldu";
 
         public static string AuthorizationDenied = "giriş engellendi";
-      
+        internal static string CategoryAlreadyExist="Aynı isimde birden fazla kategori eklenemez";
     }
 }

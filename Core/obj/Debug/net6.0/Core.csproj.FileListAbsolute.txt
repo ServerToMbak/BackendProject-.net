@@ -22,3 +22,15 @@ C:\Users\msı-nb\source\repos\BackendProject-.net\Core\obj\Debug\net6.0\Core.dll
 C:\Users\msı-nb\source\repos\BackendProject-.net\Core\obj\Debug\net6.0\refint\Core.dll
 C:\Users\msı-nb\source\repos\BackendProject-.net\Core\obj\Debug\net6.0\Core.pdb
 C:\Users\msı-nb\source\repos\BackendProject-.net\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\bin\Debug\net6.0\Core.deps.json
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\bin\Debug\net6.0\Core.dll
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\bin\Debug\net6.0\Core.pdb
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.dll
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\refint\Core.dll
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\Core.pdb
+C:\Users\msı-nb\Downloads\BackendProject-.net-main\Core\obj\Debug\net6.0\ref\Core.dll

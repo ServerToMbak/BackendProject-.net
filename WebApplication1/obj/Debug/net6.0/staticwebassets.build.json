@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sMy+RYWP5oddt9PFrQVF0qs/CU6ZNlNyDNqU5YwZYPg=",
+  "Hash": "yQSzSGuBrNiRWfEHLukMD8um9LVhuvJkVKbqtsXG8PU=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\05c080f5-991c-4711-b85e-2cab852f7ee9.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\05c080f5-991c-4711-b85e-2cab852f7ee9.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/05c080f5-991c-4711-b85e-2cab852f7ee9.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\05c080f5-991c-4711-b85e-2cab852f7ee9.jpg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\12e29abf-d83e-4992-b524-fd771f567ef2.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\12e29abf-d83e-4992-b524-fd771f567ef2.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/12e29abf-d83e-4992-b524-fd771f567ef2.jpg",
       "AssetKind": "All",
@@ -51,10 +51,27 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\12e29abf-d83e-4992-b524-fd771f567ef2.jpg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\2e6bce5b-4c6c-40cf-bbc0-457748c93595.jpeg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\1698544d-1ecf-484a-86f4-40b4a1e31e73.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/1698544d-1ecf-484a-86f4-40b4a1e31e73.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\1698544d-1ecf-484a-86f4-40b4a1e31e73.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\2e6bce5b-4c6c-40cf-bbc0-457748c93595.jpeg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/2e6bce5b-4c6c-40cf-bbc0-457748c93595.jpeg",
       "AssetKind": "All",
@@ -68,10 +85,27 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\2e6bce5b-4c6c-40cf-bbc0-457748c93595.jpeg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\5c2606dc-c33a-48ba-884d-ce6823d5de30.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\379d2348-58dd-4753-a060-b232c6466233.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/379d2348-58dd-4753-a060-b232c6466233.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\379d2348-58dd-4753-a060-b232c6466233.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\5c2606dc-c33a-48ba-884d-ce6823d5de30.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/5c2606dc-c33a-48ba-884d-ce6823d5de30.jpg",
       "AssetKind": "All",
@@ -85,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\5c2606dc-c33a-48ba-884d-ce6823d5de30.jpg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\6d932b60-d6b6-49df-833a-b3d952b7401d.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\6d932b60-d6b6-49df-833a-b3d952b7401d.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/6d932b60-d6b6-49df-833a-b3d952b7401d.jpg",
       "AssetKind": "All",
@@ -102,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\6d932b60-d6b6-49df-833a-b3d952b7401d.jpg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\82c06331-ab5d-48e3-9ba9-1908e02bf5f8.jpeg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\82c06331-ab5d-48e3-9ba9-1908e02bf5f8.jpeg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/82c06331-ab5d-48e3-9ba9-1908e02bf5f8.jpeg",
       "AssetKind": "All",
@@ -119,10 +153,44 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\82c06331-ab5d-48e3-9ba9-1908e02bf5f8.jpeg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\dedc3eb6-4370-407a-aca8-0e6a678aa503.jpeg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\cd6fcde4-d70a-495e-9087-4b267e089b51.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/cd6fcde4-d70a-495e-9087-4b267e089b51.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\cd6fcde4-d70a-495e-9087-4b267e089b51.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\d4d12217-b346-4d80-99ca-f7680e0550f3.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "Uploads/Images/d4d12217-b346-4d80-99ca-f7680e0550f3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Images\\d4d12217-b346-4d80-99ca-f7680e0550f3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\dedc3eb6-4370-407a-aca8-0e6a678aa503.jpeg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/dedc3eb6-4370-407a-aca8-0e6a678aa503.jpeg",
       "AssetKind": "All",
@@ -136,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\dedc3eb6-4370-407a-aca8-0e6a678aa503.jpeg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\ef67a680-b9c1-469d-aa5d-d7c15d2980fe.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\ef67a680-b9c1-469d-aa5d-d7c15d2980fe.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/ef67a680-b9c1-469d-aa5d-d7c15d2980fe.jpg",
       "AssetKind": "All",
@@ -153,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Images\\ef67a680-b9c1-469d-aa5d-d7c15d2980fe.jpg"
     },
     {
-      "Identity": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\Uploads\\Images\\f9054322-a43c-42ea-8fa9-6dbab7e25424.jpg",
+      "Identity": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\Uploads\\Images\\f9054322-a43c-42ea-8fa9-6dbab7e25424.jpg",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msı-nb\\source\\repos\\BackendProject-.net\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\msı-nb\\Downloads\\BackendProject-.net-main\\WebApplication1\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "RelativePath": "Uploads/Images/f9054322-a43c-42ea-8fa9-6dbab7e25424.jpg",
       "AssetKind": "All",

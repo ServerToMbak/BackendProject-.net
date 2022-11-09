@@ -4,8 +4,10 @@ using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
@@ -29,6 +31,11 @@ namespace Business.Concrete
         [CacheRemoveAspect("ICategoryService.GetById")]
         public IResult Add(Category category)
         {
+            var result = BusinessRules.Run(IfCategoryNameAlreadyExist(category.CategoryName));
+            if(result != null)
+            {
+                return result;
+            }
             _categoryDal.Add(category);
             return new SuccessResult(Messages.CategoryAdded);
         }
@@ -52,7 +59,7 @@ namespace Business.Concrete
 
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c=>c.CategoryId ==id));
         }
-        [CacheAspect(10)]
+       
         public IDataResult<List<GetByCategoryAllitems>> GetCategoryDetail(int id)
         {
             return new SuccessDataResult<List<GetByCategoryAllitems>> (_categoryDal.getByCategoryDetails(id));
@@ -64,6 +71,16 @@ namespace Business.Concrete
         public IResult Update(Category category)
         {
             _categoryDal.Update(category);
+            return new SuccessResult();
+        }
+        private IResult IfCategoryNameAlreadyExist(string CategoryName)
+        {
+            var result = _categoryDal.GetAll(c => c.CategoryName==CategoryName).Any();
+            
+            if (result)
+            {
+                return new ErrorResult(Messages.CategoryAlreadyExist);
+            }
             return new SuccessResult();
         }
     }
