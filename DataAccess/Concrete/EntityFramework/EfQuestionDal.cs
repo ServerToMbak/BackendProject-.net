@@ -24,11 +24,11 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from q in context.Questions
                              join user in context.Users
                              on q.UserId equals user.Id
-                             where q.QuestionId == id 
-                           
+                             where q.QuestionId == id
+
                              select new QuestionDetailDto
                              {
-                               
+
                                  userId = user.Id,
                                  FirstName = user.FirstName,
                                  LastName = user.LastName,
@@ -37,10 +37,20 @@ namespace DataAccess.Concrete.EntityFramework
                                  Title = q.Title,
                                  QuestionDescription = q.Description,
                                  QuestionImage = context.QuestionImage.Where(qi => qi.QuestıonId == q.QuestionId).ToList(),
-                                 Comment =context.Comments.Where(cm => cm.QuestionId == id).ToList(),
+                                 Comment = (List<GetCommentDetailDto>)(
                                
-                                 
-                                      
+                                 from comment in context.Comments.Where(cm => cm.QuestionId == q.QuestionId)
+                                 from us in context.Users.Where(user=>user.Id ==comment.UserId)
+                                           select new GetCommentDetailDto
+                                           {
+                                               UserId=comment.UserId,
+                                               FirstName = us.FirstName,
+                                               LastName = us.LastName,
+                                               Date = comment.Date,
+                                               TheComment = comment.TheComment
+                                           })
+         
+                                   
                                  
                              };
                 return result.FirstOrDefault();
